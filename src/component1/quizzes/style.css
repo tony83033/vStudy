@@ -1,0 +1,261 @@
+body{
+    background-image:  linear-gradient(to right, #b3c1f3, #ebeffc);
+    font-size: clamp(16px, 5vw, 18px);
+
+
+}
+
+.testimonials-container {
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 50px;
+    text-align: center;
+}  
+
+  .testimonial-tile {
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 20px ;
+    margin: 80px auto ;
+    text-align: left;
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+
+  }
+  .testimonial-tile:hover {
+    transform: scale(1.1); /* Scale up on hover */
+      cursor: pointer;
+  }
+  
+  .testimonial-text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  hr{
+    border: 1px solid #950cde;
+  }
+  
+
+  .subjects{
+    display: flex;
+    flex-wrap:wrap ;
+
+  }
+
+
+  button {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 500;
+    line-height: 1;
+    padding: 1em 1.5em;
+    position: relative;
+    transition: filter var(--motion-duration);
+  }
+  
+  button:hover {
+    filter: brightness(1.1);
+  }
+  
+  button:active {
+    filter: brightness(0.9);
+  }
+  
+  button > span {
+    display: block;
+    position: relative;
+    transition: transform var(--motion-duration) var(--motion-ease);
+    z-index: 1;
+  }
+  
+  button:hover > span {
+    transform: scale(1.05);
+  }
+  
+  button:active > span {
+    transform: scale(0.95);
+  }
+  
+  button > svg {
+    fill: #950cde;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
+  
+  button > svg > path {
+    transition: var(--motion-duration) var(--motion-ease);
+  }
+  
+  button:hover > svg > path {
+    d: path("M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0");
+  }
+  
+  button:active > svg > path {
+    d: path("M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0");
+  }
+
+.time{
+  background-color: #d5dcff;
+  padding: 2px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  
+}
+
+.card-title{
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  list-style: none;
+}
+
+.card-meta{
+  color: #865e9b;
+
+}
+
+.card-footer{
+  
+  margin-top: 25px;
+  height: 50px;
+  background: none;
+  border-top: none;
+  padding: 0.75rem 1.25rem;
+
+
+ }
+
+
+
+ .card-footer .media{
+  position: absolute; /* Set the media section as absolute */
+  bottom: 7%; /* Align the media section to the bottom */
+  left: 10%; /* Align the media section to the left */
+  right: 0; /* Align the media section to the right */
+  display: flex;
+  align-items: center;
+ }
+
+ .result{
+  padding-left: 30px;
+  align-items: center;
+  position: absolute;
+  left: 75%;
+  bottom: 7%;
+ }
+
+
+ .marks{
+  color: white;
+  background-color: #a346d6;
+  width: fit-content;
+  position: absolute;
+  padding: 0 10px;
+  left: 85%;
+  top:0%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+
+ }
+
+/* .media a img{
+  background-color: #a346d6;
+  align-items: right;
+  text-align: right;
+} */
+.bin{
+  position: absolute;
+  padding: 0 10px;
+  left: 65%;
+  top:30%;
+}
+@media only screen and (max-width:280px) {
+.testimonials-container{
+    padding: 0px 20px;
+}
+.testimonial-tile{
+  padding: 55px 15px;
+
+}
+.middle{
+  display: none;
+}
+.result{
+  left: 55%;
+  bottom: 0;
+}
+.marks{
+  left: 75%;
+  height: 14%;
+  width: 25%;
+}
+.bin{
+  margin-left:5%;
+}
+}
+@media only screen and (min-width:281px) and (max-width: 345px){
+  .testimonials-container{
+      padding: 0px 25px;
+   }
+  .testimonial-tile{
+    padding: 55px 15px;
+  }
+  .marks{
+    left: 75%;
+    height: 14%;
+    width: 25%;
+  }
+  .bin{
+    margin-left:5%;
+  }
+
+}
+@media only screen and (min-width:346px) and (max-width: 405px){
+  .testimonials-container{
+    padding: 0px 25px;
+ }
+.testimonial-tile{
+  padding: 55px 15px;
+}
+.marks{
+  left: 75%;
+  height: 14%;
+  width: 25%;
+}
+.bin{
+  margin-left:45%;
+}
+
+}
+
+/* @media only screen and (max-width:992px){
+  .testimonial-tile{
+    margin-top: 60px;
+  }
+  
+} */
+@media only screen and(max-width:892px){
+  .testimonial-tile{
+    margin-top: 90px;
+    background-color: red;
+  }
+}

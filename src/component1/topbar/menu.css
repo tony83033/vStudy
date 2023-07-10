@@ -1,0 +1,19 @@
+
+
+#ham-ul {
+    text-align: left;
+    font-size: 25px;
+}
+
+li {
+    list-style: none;
+    color: white;
+}
+li a{
+    text-decoration: none;
+    color: white;
+
+}
+#ham-ul li a:hover{
+    font-size: 65px;
+}
